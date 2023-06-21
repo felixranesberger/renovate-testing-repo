@@ -2,5 +2,30 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "groupName": "TYPO3",
+      "matchPackagePrefixes": [
+        "typo3/"
+      ],
+      "assignees": ["@drichter"]
+    },
+    {
+      "matchPackagePatterns": [
+        "^typo3/"
+      ],
+      "separateMinorPatch": true
+    },
+    {
+      "matchPackagePatterns": [
+        "^typo3/"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "major"
+      ],
+      "enabled": false
+    }
   ]
 }
