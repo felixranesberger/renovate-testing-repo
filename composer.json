@@ -1,0 +1,15 @@
+{
+    "name": "felixranesberger/renovate-testing-repo",
+    "autoload": {
+        "psr-4": {
+            "Felixranesberger\\RenovateTestingRepo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felix Ranesberger",
+            "email": "52704891+felixranesberger@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
