@@ -1,0 +1,24 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  TYPO3\CMS\Scheduler\:
+    resource: '../Classes/*'
+
+  TYPO3\CMS\Scheduler\Controller\SchedulerModuleController:
+    tags: [ 'backend.controller' ]
+
+  TYPO3\CMS\Scheduler\Command\SchedulerCommand:
+    tags:
+      - name: 'console.command'
+        command: 'scheduler:run'
+        description: 'Start the TYPO3 Scheduler from the command line.'
+        schedulable: false
+
+  TYPO3\CMS\Scheduler\SystemInformation\ToolbarItemProvider:
+    tags:
+      - name: event.listener
+        identifier: 'scheduler/show-latest-errors'
+        method: 'getItem'

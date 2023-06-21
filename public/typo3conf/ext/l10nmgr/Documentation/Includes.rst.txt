@@ -1,0 +1,50 @@
+﻿.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. This is 'Includes.txt'. It is included at the very top of each and
+   every ReST source file in this documentation project (= manual).
+
+.. ==================================================
+.. DEFINE SOME TEXT ROLES
+.. --------------------------------------------------
+
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
+.. role::   yaml(code)
+.. role:: html(code)
+
+.. highlight:: php
+
+.. |img-translation-workflow-with-l10nmgr|      image:: /Images/Introduction/translation-workflow-with-l10nmgr.png
+.. :border: 0
+.. :align: left
+.. :name: Translation Workflow with L10nmgr
+
+.. |img-translation-workflow-without-l10nmgr|      image:: /Images/Introduction/translation-workflow-without-l10nmgr.png
+.. :border: 0
+.. :align: left
+.. :name: Translation Workflow without L10nmgr
+
+.. |img-manager-configuration|      image:: /Images/UsersManual/manager-configuration.png
+.. :border: 0
+.. :align: left
+.. :name: Creation of Localization Manager configuration
+
+.. |img-online-tranlation-form|      image:: /Images/UsersManual/online-tranlation-form.png
+.. :border: 0
+.. :align: left
+.. :name: Online translation form
+
+.. |img-xml-export-settings|      image:: /Images/Export/xml-export-settings.png
+.. :border: 0
+.. :align: left
+.. :name: XML export settings
+
+.. |img-excel-export-settings|      image:: /Images/Export/excel-export-settings.png
+.. :border: 0
+.. :align: left
+.. :name: Excel export settings

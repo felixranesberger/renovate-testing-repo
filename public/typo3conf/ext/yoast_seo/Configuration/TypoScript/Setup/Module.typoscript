@@ -1,0 +1,5 @@
+module.tx_yoastseo {
+    settings {
+        itemsPerPage = 20
+    }
+}

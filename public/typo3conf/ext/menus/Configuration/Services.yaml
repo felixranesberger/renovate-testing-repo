@@ -1,0 +1,41 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  B13\Menus\:
+    resource: '../Classes/*'
+
+  B13\Menus\DataProcessing\BreadcrumbsMenu:
+    public: true
+  B13\Menus\DataProcessing\LanguageMenu:
+    public: true
+  B13\Menus\DataProcessing\ListMenu:
+    public: true
+  B13\Menus\DataProcessing\TreeMenu:
+    public: true
+  B13\Menus\ContentObject\ContentObjectServiceContainer:
+    public: true
+  B13\Menus\CacheHelper:
+    arguments:
+      $cache: '@cache.hash'
+  B13\Menus\Hooks\DataHandlerHook:
+    public: true
+
+  B13\Menus\ContentObject\TreeMenuContentObject:
+    tags:
+      - name: frontend.contentobject
+        identifier: 'TREEMENU'
+  B13\Menus\ContentObject\ListMenuContentObject:
+    tags:
+      - name: frontend.contentobject
+        identifier: 'LISTMENU'
+  B13\Menus\ContentObject\LanguageMenuContentObject:
+    tags:
+      - name: frontend.contentobject
+        identifier: 'LANGUAGEMENU'
+  B13\Menus\ContentObject\BreadcrumbsContentObject:
+    tags:
+      - name: frontend.contentobject
+        identifier: 'BREADCRUMBS'

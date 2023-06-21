@@ -1,0 +1,37 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Constant LF not found\\.$#"
+			count: 4
+			path: Classes/Command/Export.php
+
+		-
+			message: "#^Access to an undefined property TYPO3\\\\CMS\\\\Core\\\\Configuration\\\\FlexForm\\\\FlexFormTools\\:\\:\\$traverseFlexFormXMLData_Data\\.$#"
+			count: 3
+			path: Classes/Model/Tools/Tools.php
+
+		-
+			message: "#^Constant CR not found\\.$#"
+			count: 1
+			path: Classes/Model/Tools/XmlTools.php
+
+		-
+			message: "#^Constant LF not found\\.$#"
+			count: 4
+			path: Classes/Model/Tools/XmlTools.php
+
+		-
+			message: "#^Constant LF not found\\.$#"
+			count: 1
+			path: Classes/Model/TranslationDataFactory.php
+
+		-
+			message: "#^Constant LF not found\\.$#"
+			count: 2
+			path: Classes/View/AbstractExportView.php
+
+		-
+			message: "#^Constant LF not found\\.$#"
+			count: 2
+			path: Classes/View/L10nHtmlListView.php
+

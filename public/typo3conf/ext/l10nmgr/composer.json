@@ -1,0 +1,68 @@
+{
+  "name": "localizationteam/l10nmgr",
+  "type": "typo3-cms-extension",
+  "description": "Module for managing localization import and export",
+  "homepage": "https://docs.typo3.org/typo3cms/extensions/l10nmgr/",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "L10N",
+    "I18N",
+    "T9N",
+    "localization",
+    "translation",
+    "internationalization",
+    "language"
+  ],
+  "support": {
+    "issues": "https://forge.typo3.org/projects/extension-l10nmgr/issues"
+  },
+  "require": {
+    "typo3/cms-backend": "^10.4 || ^11.5",
+    "typo3/cms-core": "^10.4 || ^11.5",
+    "typo3/cms-fluid": "^10.4 || ^11.5",
+    "typo3/cms-scheduler": "^10.4 || ^11.5"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.1.0",
+    "friendsoftypo3/phpstan-typo3": "^0.8.1",
+    "phpstan/phpstan": "^0.12.99"
+  },
+  "autoload": {
+    "psr-4": {
+      "Localizationteam\\L10nmgr\\": "Classes"
+    }
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true,
+    "process-timeout": 1000,
+    "vendor-dir": ".Build/vendor",
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  },
+  "scripts": {
+    "php:fix": ".Build/vendor/bin/php-cs-fixer --config=Configuration/php-cs-fixer.php fix Classes Tests",
+    "ci:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+    "ci:php:fixer": ".Build/vendor/bin/php-cs-fixer --config=Configuration/php-cs-fixer.php fix --dry-run -v --show-progress=dots Classes Configuration Tests",
+    "ci:php:stan": ".Build/vendor/bin/phpstan --no-progress",
+    "phpstan:baseline": ".Build/vendor/bin/phpstan  --generate-baseline=phpstan-baseline.neon",
+    "typo3:docs:render": [
+      "docker-compose run --rm t3docmake"
+    ],
+    "typo3:docs:serve": [
+      "php -S 127.0.0.1:4000 -t Documentation-GENERATED-temp/Result/project/0.0.0"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "l10nmgr"
+    }
+  }
+}
