@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "container-images": "^0.1.9"
+    "container-images": "^1.0.0"
   }
 }
