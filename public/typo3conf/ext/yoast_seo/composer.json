@@ -42,11 +42,11 @@
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^2.0",
     "overtrue/phplint": "^2.0",
-    "phpstan/phpstan": "^0.12",
+    "phpstan/phpstan": "^0.12 || ^1.0",
     "phpstan/extension-installer": "^1.0",
-    "slam/phpstan-extensions": "^5.0",
+    "slam/phpstan-extensions": "^5.0 || ^6.0",
     "typo3/tailor": "^1.1",
-    "saschaegerer/phpstan-typo3": "^0.13"
+    "saschaegerer/phpstan-typo3": "^0.13 || ^1.0"
   },
   "replace": {
     "typo3-ter/yoast-seo": "self.version"
