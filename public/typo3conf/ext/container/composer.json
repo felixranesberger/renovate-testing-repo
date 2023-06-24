@@ -33,7 +33,7 @@
         "friendsofphp/php-cs-fixer": "~3.9.0",
         "codeception/codeception": "^5.0 || ^4.1",
         "codeception/module-asserts": "^3.0 || ^1.0",
-        "codeception/module-webdriver": "^3.1 || ^1.0",
+        "codeception/module-webdriver": "^3.1 || ^1.0 || ^4.0",
         "codeception/module-db": "^3.0 || ^1.0",
         "phpstan/phpstan": "^1.4.8",
         "b13/container-example": "dev-master",
