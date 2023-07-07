@@ -1,0 +1,53 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Stylelint",
+      "matchPackagePatterns": [
+        "stylelint"
+      ]
+    },
+    {
+      "groupName": "ESLint",
+      "matchPackagePatterns": [
+        "eslint"
+      ]
+    },
+    {
+      "groupName": "Vite",
+      "matchPackagePatterns": [
+        "vite"
+      ]
+    },
+    {
+      "groupName": "TYPO3",
+      "matchPackagePrefixes": [
+        "typo3/"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
+        "^typo3/"
+      ],
+      "separateMinorPatch": true
+    },
+    {
+      "matchPackagePatterns": [
+        "^typo3/"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "major"
+      ],
+      "enabled": false
+    }
+  ]
+}
