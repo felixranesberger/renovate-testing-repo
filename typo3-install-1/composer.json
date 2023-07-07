@@ -5,7 +5,6 @@
   "require": {
     "php": "^7.4 || ~8.0.0",
     "helhum/typo3-console": "^7.0",
-    "in2code/in2auth": "^1.0",
     "in2code/in2template": "@dev",
     "typo3/cms-backend": "^11.5",
     "typo3/cms-belog": "^11.5",

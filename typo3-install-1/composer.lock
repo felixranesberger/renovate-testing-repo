@@ -1331,43 +1331,6 @@
             "time": "2021-10-16T13:29:04+00:00"
         },
         {
-            "name": "in2code/in2auth",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.in2code.de/in2code-Team/tools/in2auth.git",
-                "reference": "dbbceaf2270ab84ef9663254b77b1987c44e65fa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.in2code.de/api/v4/projects/494/packages/composer/archives/in2code/in2auth.zip?sha=dbbceaf2270ab84ef9663254b77b1987c44e65fa",
-                "reference": "dbbceaf2270ab84ef9663254b77b1987c44e65fa",
-                "shasum": ""
-            },
-            "require": {
-                "omines/oauth2-gitlab": "^3.4",
-                "waldhacker/typo3-oauth2-client": "^1.0.0"
-            },
-            "require-dev": {
-                "roave/security-advisories": "dev-latest"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "in2auth"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "In2code\\In2auth\\": "Classes"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Configures and extends oauth2 authentication"
-        },
-        {
             "name": "in2code/in2template",
             "version": "dev-master",
             "dist": {
