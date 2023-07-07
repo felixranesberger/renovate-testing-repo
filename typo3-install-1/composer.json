@@ -1,0 +1,67 @@
+{
+  "name": "in2code/cms-boilerplate",
+  "description": "in2code GmbH TYPO3 CMS Boilerplate",
+  "license": "GPL-2.0",
+  "require": {
+    "php": "^7.4 || ~8.0.0",
+    "helhum/typo3-console": "^7.0",
+    "in2code/in2auth": "^1.0",
+    "in2code/in2template": "@dev",
+    "typo3/cms-backend": "^11.5",
+    "typo3/cms-belog": "^11.5",
+    "typo3/cms-beuser": "^11.5",
+    "typo3/cms-core": "^11.5",
+    "typo3/cms-dashboard": "^11.5",
+    "typo3/cms-extbase": "^11.5",
+    "typo3/cms-extensionmanager": "^11.5",
+    "typo3/cms-filelist": "^11.5",
+    "typo3/cms-filemetadata": "^11.5",
+    "typo3/cms-fluid": "^11.5",
+    "typo3/cms-fluid-styled-content": "^11.5",
+    "typo3/cms-frontend": "^11.5",
+    "typo3/cms-info": "^11.5",
+    "typo3/cms-install": "^11.5",
+    "typo3/cms-recordlist": "^11.5",
+    "typo3/cms-recycler": "^11.5",
+    "typo3/cms-rte-ckeditor": "^11.5",
+    "typo3/cms-scheduler": "^11.5",
+    "typo3/cms-setup": "^11.5",
+    "typo3/cms-sys-note": "^11.5",
+    "typo3/cms-viewpage": "^11.5"
+  },
+  "config": {
+    "sort-packages": true,
+    "gitlab-domains": [
+      "gitlab.in2code.de"
+    ],
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./packages/*"
+    },
+    {
+      "type": "composer",
+      "url": "https://gitlab.in2code.de/api/v4/group/40/-/packages/composer/packages.json"
+    }
+  ],
+  "scripts": {
+    "post-autoload-dump": [
+      "@folder-structure"
+    ],
+    "folder-structure": [
+      "./vendor/bin/typo3cms install:fixfolderstructure"
+    ]
+  },
+  "require-dev": {
+    "ichhabrecht/filefill": "^4.0",
+    "typo3/cms-adminpanel": "^11.5",
+    "typo3/cms-lowlevel": "^11.5",
+    "typo3/cms-tstemplate": "^11.5",
+    "typo3/testing-framework": "^6.12"
+  }
+}
